@@ -12,7 +12,7 @@ const Dashboard = () => {
     // =================================================================
     // 1. TEAM STATE LOGIC (New)
     // =================================================================
-    const [teamName, setTeamName] = useState("Code Warriors"); // Default name
+    const [teamName, setTeamName] = useState("Code Hub"); // Default name
     const [memberCount, setMemberCount] = useState("6");       // Default count (UPDATED)
     const [isEditingTeam, setIsEditingTeam] = useState(false); // Edit mode toggle
 
@@ -36,7 +36,7 @@ const Dashboard = () => {
     // 2. TIMER LOGIC
     // =================================================================
     const INITIAL_HOURS = 2;
-    const INITIAL_MINUTES = 15;
+    const INITIAL_MINUTES = 0;
     const TOTAL_SECONDS = (INITIAL_HOURS * 3600) + (INITIAL_MINUTES * 60);
 
     const [timeLeft, setTimeLeft] = useState<number>(TOTAL_SECONDS);
